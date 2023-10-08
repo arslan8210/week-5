@@ -1,0 +1,133 @@
+2023-CS-191
+MUHAMMAD ARSLAN
+
+
+
+#include<iostream>
+using namespace std;
+void volume();
+main()
+{
+volume();
+
+}
+void volume()
+{
+float length,width,height,volume;
+string output;
+cout<<"Enter the length of the pyramit (in meters):";
+cin>>length;
+cout<<"Enter the width of the pyramit (in meters):";
+cin>>width;
+cout<<"Enter the heigth of the pyramit (in meters):";
+cin>>height;
+cout<<"Enter the length of the pyramit (milimeters,centimeters,meters,kilometers):";
+cin>>output;
+volume=(length*width*height)/3;
+cout<<"the volume of the pyramid is :" <<volume;
+}
+
+
+
+
+
+#include<iostream>
+using namespace std;
+int x=10;
+void myFunction()
+{
+
+int x=20;
+
+}
+main()
+{
+
+cout<<"the value of x is:"<<x;
+
+}
+
+
+#include<iostream>
+using namespace std;
+void taxcalculator(char type,float price);
+main()
+{ 
+char type;
+cout<<"Enter the vehicle type code (M, E, S, V, T): ";
+cin>>type;
+int price;
+cout<<"Enter the price of the vehicle: ";
+cin>>price;
+taxcalculator();
+
+}
+
+void taxcalculator(char type,float price)
+{
+int finalprice;
+if(type=='M')
+{
+tax=price*6/100;
+finalprice=price+tax;
+
+}
+if(type=='E')
+{
+tax=price*8/100;
+finalprice+price+tax;
+
+}
+if(type=='S')
+{
+tax=price*10/100;
+finalprice=price+tax;
+
+}
+if(type=='V')
+{
+tax=price*12/100;
+finalprice=price+tax;
+
+}
+if(type=='T')
+{
+tax=price*15/100;
+finalprice=price+tax;
+
+}
+
+cout<<"The final price of the type "<<type"after adding the tax is "<<final price;
+
+
+} 
+
+
+#include<iostream>
+using namespace std;
+main()
+{
+    float hrs,d,wk,t,off,tt;
+    cout << "Enter the needed hrs: ";
+    cin >>hrs;
+    cout <<"Enter the d that the firm has: ";
+    cin >>d;
+    cout<< "Enter the number of all wk: ";
+    cin >> wk;
+    t=10;
+    off=(t*10)/100;
+    tt=(t-off)*d*wk;
+    if(tt<hrs)
+    {
+        float final;
+        final=hrs-tt;
+        cout <<"Not enough t! "<<final << " hrs needed.";
+    }
+    if(tt>hrs)
+    {
+    float final;
+    final=tt-hrs;
+    cout << "Yes! " <<final << " hrs left.";
+    }
+
+}
